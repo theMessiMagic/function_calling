@@ -95,4 +95,7 @@ def execute(q: str = Query(...)):
             })
         }
 
-    return {"error": "Query not recognized"}
+    return {
+    "name": "invalid_query",
+    "arguments": "{}"
+}
